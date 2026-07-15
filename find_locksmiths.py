@@ -1,67 +1,52 @@
 #!/usr/bin/env python3
-"""
-Locksmith WhatsApp Outreach — Number Finder & Verifier
-Run on YOUR laptop. Finds UAE locksmith WhatsApp numbers and generates outreach tool.
-Usage: pip install requests && python3 find_locksmiths.py
-"""
+"""Locksmith WhatsApp Outreach — scrapes UAE business directories directly."""
 import requests, re, csv, time, urllib.parse
 
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-
-# === STEP 1: Search Google for locksmith WhatsApp numbers ===
-print("Step 1: Searching Google for locksmith WhatsApp numbers...")
-queries = [
-    "locksmith whatsapp number dubai 05",
-    "locksmith whatsapp number abu dhabi 05",
-    "key maker whatsapp number sharjah 05",
-    "car key locksmith whatsapp dubai 05",
-    "locksmith whatsapp 971",
-    "key cutting whatsapp uae 05",
-    "lock repair whatsapp dubai 05",
-    "locksmith near me whatsapp uae 05",
-    "locksmith mobile number uae 056",
-    "locksmith mobile number uae 050",
-    "locksmith mobile number uae 052",
-    "locksmith mobile number uae 054",
-    "locksmith mobile number uae 055",
-    "locksmith mobile number uae 058",
-]
+headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
 
 all_phones = set()
-for q in queries:
+
+# === Directly scrape Yellow Pages UAE locksmith pages ===
+print("Scraping Yellow Pages UAE for locksmith numbers...")
+for page in range(1, 11):
+    url = f"https://www.yellowpages-uae.com/uae/locksmith/{page}"
     try:
-        r = requests.get(f"https://www.google.com/search?q={urllib.parse.quote(q)}&num=30", headers=headers, timeout=15)
-        mobiles = re.findall(r'(?:\+?971[\s\-]?)?05\d[\s\-]?\d{3}[\s\-]?\d{4}', r.text)
+        r = requests.get(url, headers=headers, timeout=15)
+        # Find all UAE mobile numbers (05x pattern)
+        mobiles = re.findall(r'(?:\+?971[\s\-]?)?05\d[\s\-]?\d{2}[\s\-]?\d{2}[\s\-]?\d{2}', r.text)
         for m in mobiles:
             digits = re.sub(r'\D', '', m)
             if len(digits) >= 9 and digits[0] == '5':
                 all_phones.add('971' + digits[-9:])
-        print(f"  {q[:45]}: {len(mobiles)} found")
-        time.sleep(2)
+        print(f"  Page {page}: {len(mobiles)} numbers found")
+        time.sleep(1.5)
     except Exception as e:
-        print(f"  {q[:45]}: failed")
+        print(f"  Page {page}: error — {e}")
 
-print(f"\nFound {len(all_phones)} unique numbers")
+print(f"\nFound {len(all_phones)} unique mobile numbers")
 
-# === STEP 2: Verify on WhatsApp ===
-print("\nStep 2: Verifying numbers on WhatsApp...")
+# === Verify on WhatsApp ===
+print("\nVerifying on WhatsApp (this takes ~2 min)...")
 verified = []
+total = len(all_phones)
 for i, phone in enumerate(sorted(all_phones), 1):
     try:
         r = requests.get(f"https://wa.me/{phone}", headers=headers, timeout=10)
-        t = r.text
-        if 'whatsapp' in t.lower() and 'invalid' not in t.lower() and "doesn't" not in t.lower():
+        t = r.text.lower()
+        # Check if WhatsApp page says "Continue to Chat" or shows the chat UI
+        has_wa = ('whatsapp' in t or 'continue to chat' in t.lower()) and 'invalid' not in t
+        if has_wa:
             verified.append(phone)
-            print(f"  [{i}/{len(all_phones)}] YES {phone}")
+            print(f"  [{i}/{total}] YES {phone}")
         else:
-            print(f"  [{i}/{len(all_phones)}] NO  {phone}")
+            pass  # skip silently
     except:
-        print(f"  [{i}/{len(all_phones)}] ERR {phone}")
-    time.sleep(1)
+        pass
+    time.sleep(0.8)
 
-print(f"\nWhatsApp verified: {len(verified)} out of {len(all_phones)}")
+print(f"\nWhatsApp verified: {len(verified)} out of {total}")
 
-# === STEP 3: Generate outreach HTML ===
+# === Generate outreach HTML ===
 if verified:
     DUAL_MSG = """السلام عليكم،
 
@@ -90,24 +75,19 @@ gxlocate.com"""
     html += '.btn:hover{background:#1da851}.done{opacity:.25;pointer-events:none}'
     html += '.idx{color:#999;font-size:11px;width:28px;text-align:right}</style></head><body>'
     html += f'<div class="bar"><h2>Locksmith Outreach UAE</h2><p id="ctr">0 / {len(verified)} sent</p></div>'
-    
     for i, phone in enumerate(verified, 1):
         display = f"+{phone[:3]} {phone[3:5]} {phone[5:8]} {phone[8:]}"
         wa_url = f"https://wa.me/{phone}?text={urllib.parse.quote(DUAL_MSG)}"
-        html += f'<div class="card" id="c{i}"><span class="idx">#{i}</span><span class="num">{display}</span><a class="btn" href="{wa_url}" target="_blank" onclick="s({i})">Send</a></div>\n'
-    
+        html += f'<div class="card" id="c{i}"><span class="idx">#{i}</span><span class="num">{display}</span><a class="btn" href="{wa_url}" target="_blank" onclick="s({i})">Send</a></div>'
     html += f'<script>let c=0;function s(i){{document.getElementById("c"+i).classList.add("done");c++;document.getElementById("ctr").textContent=c+" / {len(verified)} sent"}}</script></body></html>'
     
     with open("locksmith_whatsapp_outreach.html", "w", encoding="utf-8") as f:
         f.write(html)
+    with open("locksmith_verified_numbers.csv", "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["Phone","Formatted"])
+        for p in verified:
+            w.writerow([p, f"+{p[:3]} {p[3:5]} {p[5:8]} {p[8:]}"])
     print(f"\nDone! Open locksmith_whatsapp_outreach.html")
 else:
-    print("\nNo verified numbers found. Try again or add more search queries.")
-
-# Also save CSV
-with open("locksmith_verified_numbers.csv", "w", newline="") as f:
-    w = csv.writer(f)
-    w.writerow(["Phone", "Formatted"])
-    for p in verified:
-        w.writerow([p, f"+{p[:3]} {p[3:5]} {p[5:8]} {p[8:]}"])
-print("CSV saved: locksmith_verified_numbers.csv")
+    print("\nNo verified WhatsApp numbers found.")
