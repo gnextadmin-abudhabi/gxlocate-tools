@@ -1,57 +1,465 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Target International × Duct Masters · Abu Dhabi Growth Proposal</title>
-<meta name="description" content="A combined Abu Dhabi digital growth, company portfolio and website redesign proposal by GNEXT × GXLOCATE.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#071525;--navy:#0b2442;--blue:#1b65d8;--cyan:#00c4ef;--gold:#b18a4b;--ice:#eef7ff;--off:#f7f9fc;--white:#fff;--text:#152235;--muted:#5b6878;--line:#dfe6ee;--green:#13a879;--orange:#f29f38;--grad:linear-gradient(135deg,#061526 0%,#103b6a 58%,#176bd6 100%);--accent:linear-gradient(90deg,#1b65d8,#00c4ef);--shadow:0 20px 55px rgba(7,21,37,.13)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--off);line-height:1.65;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.wrap{width:min(1160px,90%);margin:auto}.section{padding:90px 0}.alt{background:#fff}.dark{background:var(--ink);color:#fff}.label{font:700 .68rem "JetBrains Mono";letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}.dark .label{color:var(--cyan)}.title{font-size:clamp(2rem,4vw,3.25rem);line-height:1.08;letter-spacing:-.035em;color:var(--navy);margin-bottom:16px}.dark .title{color:#fff}.title em{color:var(--blue)}.dark .title em{color:var(--cyan)}.lead{font-size:1rem;color:var(--muted);max-width:740px}.dark .lead{color:rgba(255,255,255,.62)}.rule{width:55px;height:3px;background:var(--accent);border-radius:9px;margin:20px 0 38px}.skip{position:fixed;z-index:50;left:8px;top:8px;background:#fff;padding:9px 13px;border-radius:8px;transform:translateY(-160%)}.skip:focus{transform:none}a:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
-nav{position:fixed;z-index:30;inset:0 0 auto;background:rgba(6,21,38,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.09)}.progress{height:2px;width:0;background:var(--accent);position:absolute;bottom:-1px}.navin{height:66px;display:flex;align-items:center;gap:24px}.agency{font-size:1.25rem;color:#fff;font-weight:900;white-space:nowrap}.agency span{color:rgba(255,255,255,.3);margin:0 6px}.navlinks{margin-left:auto;display:flex;gap:18px;align-items:center}.navlinks a{font-size:.64rem;color:rgba(255,255,255,.58);font-weight:700}.navlinks a:hover{color:var(--cyan)}.navlinks .ncta{color:#fff;background:var(--accent);padding:8px 12px;border-radius:8px}
-.hero{min-height:96vh;background:var(--grad);color:#fff;display:flex;align-items:center;padding:125px 0 72px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:700px;height:700px;border:1px solid rgba(255,255,255,.06);border-radius:50%;right:-250px;top:-280px;box-shadow:0 0 0 100px rgba(255,255,255,.018),0 0 0 220px rgba(255,255,255,.012)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.13fr .87fr;gap:60px;align-items:center}.badge{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);border:1px solid rgba(0,196,239,.38);background:rgba(0,196,239,.1);border-radius:99px;padding:7px 16px;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:28px}.badge:before{content:"●";font-size:.45rem}.hero h1{font-size:clamp(2.8rem,5.7vw,5rem);line-height:1.01;letter-spacing:-.05em;margin-bottom:23px}.hero h1 em{color:var(--cyan)}.hero-copy{font-size:1.07rem;color:rgba(255,255,255,.68);max-width:630px}.hero-copy strong{color:#fff}.client-stage{display:grid;grid-template-columns:1fr 1fr;gap:14px;transform:rotate(1deg)}.client-card{min-height:245px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:22px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.client-card:hover{transform:translateY(-8px) rotate(-1deg);background:rgba(255,255,255,.12);box-shadow:0 25px 60px rgba(0,0,0,.22)}.client-logo{height:105px;display:grid;place-items:center}.client-logo img{max-height:95px;max-width:100%;object-fit:contain}.client-card:first-child .client-logo{background:#fff;border-radius:14px;padding:15px}.client-card h3{font-size:.95rem}.client-card p{font-size:.68rem;color:rgba(255,255,255,.5)}.hero-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:35px}.hstat{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.05);padding:13px 17px;border-radius:12px}.hstat b{display:block;color:var(--cyan);font-size:1.18rem}.hstat span{display:block;color:rgba(255,255,255,.4);font-size:.58rem;text-transform:uppercase;letter-spacing:.08em}
-.awardstrip{background:var(--ink);padding:23px 0;border-top:1px solid rgba(255,255,255,.07)}.awards{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}.award{border:1px solid rgba(255,255,255,.11);padding:8px 13px;border-radius:9px;color:rgba(255,255,255,.72);font-size:.64rem;transition:.2s}.award:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
-.twobrands{display:grid;grid-template-columns:1fr 1fr;gap:22px}.brandpanel{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s}.brandpanel:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.brandimage{height:230px;position:relative;overflow:hidden}.brandimage img{width:100%;height:100%;object-fit:cover;transition:.5s}.brandpanel:hover .brandimage img{transform:scale(1.04)}.brandtag{position:absolute;left:18px;bottom:16px;background:rgba(7,21,37,.9);color:#fff;padding:7px 11px;border-radius:8px;font-size:.62rem;font-weight:800}.brandbody{padding:26px}.brandhead{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}.brandhead h3{color:var(--navy);font-size:1.35rem}.brandhead span{font:700 .6rem "JetBrains Mono";color:var(--blue);text-transform:uppercase}.brandbody p{color:var(--muted);font-size:.85rem}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:17px}.chip{padding:5px 9px;background:var(--ice);color:var(--blue);font-size:.6rem;font-weight:700;border-radius:99px}
-.auditgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.audit{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;border-top:3px solid var(--blue);transition:.2s}.audit:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.audit b{font:700 .65rem "JetBrains Mono";color:var(--cyan);background:var(--navy);padding:6px 8px;border-radius:7px}.audit h3{font-size:.94rem;color:var(--navy);margin:14px 0 7px}.audit p{font-size:.8rem;color:var(--muted)}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:15px;padding:21px;transition:.2s}.service:hover{transform:translateY(-5px);background:rgba(0,196,239,.09);border-color:rgba(0,196,239,.35)}.service .icon{font-size:1.35rem}.service h3{font-size:.92rem;margin:10px 0 6px}.service p{font-size:.75rem;color:rgba(255,255,255,.5)}
-.company-tabs{display:flex;gap:8px;margin-bottom:25px}.tab{border:1px solid var(--line);background:#fff;padding:10px 15px;border-radius:9px;font-size:.72rem;font-weight:800;color:var(--muted);cursor:pointer}.tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.tabcontent{display:none}.tabcontent.active{display:block}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.plan{background:#fff;border:1px solid var(--line);border-radius:19px;padding:26px;display:flex;flex-direction:column;position:relative;transition:.25s}.plan:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.plan.featured{border:2px solid var(--blue);box-shadow:var(--shadow)}.ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:5px 13px;border-radius:99px;font-size:.58rem;font-weight:900;text-transform:uppercase;white-space:nowrap}.tier{font:700 .65rem "JetBrains Mono";color:var(--blue);text-transform:uppercase;letter-spacing:.1em}.plan h3{color:var(--navy);font-size:1.45rem;margin:7px 0}.price{font-size:2rem;font-weight:900;color:var(--navy)}.price small{font-size:.68rem;color:var(--muted)}.breakdown{background:var(--off);padding:12px;border-radius:9px;margin:15px 0;font-size:.74rem;color:var(--muted)}.breakdown b{color:var(--navy)}.plan ul{list-style:none;margin-bottom:20px}.plan li{font-size:.77rem;color:var(--muted);padding:8px 0 8px 18px;border-bottom:1px solid #edf1f5;position:relative}.plan li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}.plantotal{margin-top:auto;background:var(--navy);color:#fff;text-align:center;padding:12px;border-radius:9px;font-size:.72rem;font-weight:800}.plantotal span{color:var(--cyan)}.vat{text-align:center;font-size:.72rem;color:#9a6219;background:#fff7e6;border:1px solid #f8d79a;padding:12px;border-radius:10px;margin-top:18px}
-.portgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.portfolio{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px;position:relative;overflow:hidden}.portfolio:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:var(--ice);right:-45px;top:-45px}.portfolio h3{color:var(--navy);font-size:1.28rem;position:relative;z-index:1}.portfolio p{color:var(--muted);font-size:.82rem;margin:10px 0 16px}.portfolio li{font-size:.76rem;color:var(--muted);margin:7px 0 0 18px}.portfolio .fee{margin-top:20px;color:var(--blue);font-weight:900}.bundle{margin-top:20px;background:var(--grad);color:#fff;padding:20px;border-radius:15px;display:flex;justify-content:space-between;align-items:center;gap:20px}.bundle p{font-size:.76rem;color:rgba(255,255,255,.6)}.bundle b{color:var(--cyan);font-size:1.35rem;white-space:nowrap}
-.redesign{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}.website-shot{border-radius:19px;overflow:hidden;min-height:430px;position:relative}.website-shot img{position:absolute;width:100%;height:100%;object-fit:cover}.website-shot:after{content:"Target International · Digital Rebuild";position:absolute;inset:auto 18px 18px;background:rgba(7,21,37,.9);color:#fff;padding:12px 14px;border-radius:9px;font-size:.7rem;font-weight:800}.scope{background:#fff;border:1px solid var(--line);border-radius:19px;padding:28px}.scope h3{color:var(--navy);font-size:1.25rem;margin-bottom:12px}.scopegrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.scopeitem{background:var(--off);padding:10px;border-radius:8px;font-size:.72rem;color:var(--muted)}.estimate{margin-top:19px;padding:17px;border-left:4px solid var(--blue);background:var(--ice)}.estimate b{display:block;color:var(--navy)}.estimate span{font-size:.75rem;color:var(--muted)}
-.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-left:2px solid var(--cyan);background:rgba(255,255,255,.055);padding:19px;border-radius:0 12px 12px 0}.step b{font:700 .62rem "JetBrains Mono";color:var(--cyan)}.step h3{font-size:.88rem;margin:8px 0}.step p{font-size:.72rem;color:rgba(255,255,255,.5)}
-.setupgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}.setupcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px}.setupcard h3{color:var(--navy);font-size:1.05rem}.setupprice{color:var(--blue);font-size:1.35rem;font-weight:900;margin:8px 0}.setupcard li{font-size:.76rem;color:var(--muted);margin:7px 0 0 18px}.summarywrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}.summarytable{border-collapse:collapse;width:100%;min-width:850px}.summarytable th,.summarytable td{padding:13px 15px;border-bottom:1px solid var(--line);font-size:.75rem;text-align:right}.summarytable th{background:var(--navy);color:#fff;text-transform:uppercase;letter-spacing:.06em;font-size:.62rem}.summarytable th:first-child,.summarytable td:first-child{text-align:left}.summarytable td:first-child{font-weight:700;color:var(--navy)}.summarytable .total td{background:var(--ice);font-weight:900;color:var(--navy)}.investmentcards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}.investmentcard{padding:22px;border-radius:15px;background:var(--navy);color:#fff}.investmentcard.altcard{background:var(--grad)}.investmentcard small{display:block;color:var(--cyan);font-size:.61rem;text-transform:uppercase;letter-spacing:.09em;font-weight:800}.investmentcard b{display:block;font-size:1.7rem;margin:7px 0}.investmentcard p{font-size:.72rem;color:rgba(255,255,255,.58)}.payment{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.payment h3{color:var(--navy);font-size:1rem;margin-bottom:12px}.paymentgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.paymonth{background:var(--off);padding:13px;border-radius:9px}.paymonth b{display:block;color:var(--blue);font-size:.72rem}.paymonth span{font-size:.7rem;color:var(--muted)}
-.cta{text-align:center}.cta .lead{margin:auto}.button{display:inline-block;margin-top:25px;background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;font-weight:800;font-size:.78rem}.fine{font-size:.69rem;color:#8b96a4;margin-top:15px}
-footer{background:#050f1b;color:#fff;padding:68px 0 24px;border-top:3px solid transparent;border-image:var(--accent) 1}.footergrid{display:grid;grid-template-columns:1.4fr 1fr 1fr .8fr;gap:34px}.footbrand{font-size:1.55rem;font-weight:900}.footbrand span{color:rgba(255,255,255,.25);margin:0 6px}.foottag{color:var(--cyan);font-size:.76rem;font-weight:800;margin-top:9px}.footdesc,.contact,.footnav a{font-size:.68rem;color:rgba(255,255,255,.5)}.footdesc{margin:9px 0 16px}.address{font-size:.67rem;color:rgba(255,255,255,.55);margin:14px 0}.footcol h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}.footsub{color:var(--cyan);font-size:.6rem;margin:4px 0 12px}.contact{margin:8px 0}.footnav{display:flex;flex-direction:column;gap:7px}.footnav a{padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.07)}.footnav a:hover{color:var(--cyan)}.footawards{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.footaward{font-size:.54rem;border:1px solid rgba(255,255,255,.12);padding:5px 7px;border-radius:6px;color:rgba(255,255,255,.58)}.footservices{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.footservices span{font-size:.54rem;border:1px solid rgba(255,255,255,.1);padding:5px 7px;border-radius:6px;color:rgba(255,255,255,.5)}.footercta{margin-top:27px;background:linear-gradient(135deg,rgba(27,101,216,.2),rgba(0,196,239,.08));border:1px solid rgba(0,196,239,.2);padding:17px;border-radius:13px;display:flex;align-items:center;justify-content:space-between;gap:15px}.footercta strong{font-size:.8rem}.footercta p{font-size:.62rem;color:rgba(255,255,255,.45)}.footercta a{background:var(--accent);padding:9px 12px;border-radius:8px;font-size:.62rem;font-weight:800;white-space:nowrap}.footmeta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px;padding:18px 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1)}.footmeta small{display:block;font-size:.52rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.27)}.footmeta b{font-size:.64rem;color:rgba(255,255,255,.65)}.footbottom{padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:rgba(255,255,255,.3);font-size:.59rem}
-@media(max-width:950px){.navlinks{display:none}.hero-grid,.redesign{grid-template-columns:1fr}.client-stage{max-width:580px}.auditgrid,.plans{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}.footergrid{grid-template-columns:1fr 1fr}.footmeta{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.section{padding:65px 0}.hero{min-height:auto}.hero h1{font-size:2.7rem}.client-stage,.twobrands,.portgrid,.services,.timeline,.scopegrid,.footergrid,.setupgrid,.investmentcards,.paymentgrid,.footmeta{grid-template-columns:1fr}.client-card{min-height:210px}.company-tabs{overflow:auto}.bundle,.footbottom,.footercta{align-items:flex-start;flex-direction:column}.brandimage{height:190px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Ads Optimization - Spark - 22 July 2026 | GNEXT LLC x GXLOCATE</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #5e6b78;
+      --line: #d9e0e6;
+      --soft: #f4f7f9;
+      --blue: #1769aa;
+      --green: #16734a;
+      --green-soft: #e9f6ef;
+      --amber: #9a5a00;
+      --amber-soft: #fff4df;
+      --red: #a33a35;
+      --red-soft: #fcecea;
+      --brand-dark: #0a0c14;
+      --brand-gold: #f0b90b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e9eef2;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    .report {
+      width: min(1040px, calc(100% - 32px));
+      margin: 32px auto;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 36px rgba(23, 33, 43, 0.08);
+    }
+
+    .brand-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 48px;
+      background: var(--brand-dark);
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .brand-name {
+      color: var(--brand-gold);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .brand-service { color: #c8ced8; }
+
+    header {
+      padding: 40px 48px 34px;
+      border-top: 8px solid var(--brand-gold);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main { padding: 0 48px 44px; }
+
+    section {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: 0; }
+
+    .summary {
+      margin-top: 28px;
+      padding: 22px 24px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft);
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 24px;
+    }
+
+    .kpi {
+      min-height: 118px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .kpi-value {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .change-good { color: var(--green); }
+    .change-watch { color: var(--red); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      text-align: right;
+      vertical-align: middle;
+    }
+
+    th {
+      background: var(--soft);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    th:first-child, td:first-child { text-align: left; }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .work-item {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .work-item h3 { color: var(--blue); }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 7px 0; }
+
+    .notice {
+      padding: 20px 22px;
+      border: 1px solid #efcf96;
+      border-radius: 6px;
+      background: var(--amber-soft);
+    }
+
+    .notice h2 { color: var(--amber); }
+
+    .status {
+      padding: 22px 24px;
+      border: 1px solid #b8ddc9;
+      border-radius: 6px;
+      background: var(--green-soft);
+    }
+
+    .status h2 { color: var(--green); }
+
+    footer {
+      padding: 30px 48px;
+      border-top: 1px solid var(--line);
+      background: var(--brand-dark);
+      color: #c8ced8;
+      font-size: 13px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, auto);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer-title {
+      margin-bottom: 8px;
+      color: var(--brand-gold);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .footer-contact { text-align: right; }
+    .footer-contact a { color: #fff; text-decoration: none; }
+    .footer-note { margin-top: 22px; color: #8e97a6; font-size: 11px; }
+
+    @media (min-width: 761px) and (max-width: 980px) {
+      .report { width: min(100% - 24px, 940px); margin: 12px auto; }
+      .brand-bar, header, main, footer { padding-left: 30px; padding-right: 30px; }
+      .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .report { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .brand-bar, header, main, footer { padding-left: 20px; padding-right: 20px; }
+      .brand-bar { align-items: flex-start; flex-direction: column; gap: 3px; }
+      h1 { font-size: 27px; }
+      .kpis, .work-grid { grid-template-columns: 1fr; }
+      .table-wrap { overflow-x: auto; }
+      table { min-width: 660px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-contact { text-align: left; }
+    }
+
+    @media print {
+      @page { margin: 14mm; }
+      body { background: #fff; font-size: 11pt; }
+      .report { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      header { padding-top: 18px; }
+      .brand-bar, header, main, footer { padding-left: 0; padding-right: 0; }
+      .brand-bar { padding-top: 8px; padding-bottom: 8px; }
+      section, .work-item, .notice, .status, table { break-inside: avoid; }
+      .kpis { grid-template-columns: repeat(4, 1fr); }
+      .work-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to proposal</a>
-<nav aria-label="Proposal navigation"><div class="progress" id="progress"></div><div class="wrap navin"><a class="agency" href="#top">GNEXT <span>×</span> GXLOCATE</a><div class="navlinks"><a href="#companies">Companies</a><a href="#strategy">Strategy</a><a href="#plans">Plans</a><a href="#portfolios">Portfolios</a><a href="#redesign">Website</a><a class="ncta" href="#contact">Discuss proposal</a></div></div></nav>
-<header class="hero" id="top"><div class="wrap hero-grid"><div><div class="badge">Abu Dhabi group growth proposal</div><h1>Two companies. <em>One stronger</em> market presence.</h1><p class="hero-copy">A coordinated local SEO, social media and paid acquisition system for <strong>Target International</strong> and <strong>Duct Masters</strong>—plus client-winning company portfolios and a conversion-led Target International website redesign.</p><div class="hero-stats"><div class="hstat"><b>Abu Dhabi</b><span>Primary market</span></div><div class="hstat"><b>2 brands</b><span>Separate strategies</span></div><div class="hstat"><b>90 days</b><span>Foundation to scale</span></div></div></div><div class="client-stage"><div class="client-card"><div class="client-logo"><img src="assets/target-logo-footer.png" alt="Target International logo"></div><div><h3>Target International</h3><p>Complete MEP contracting solutions</p></div></div><div class="client-card"><div class="client-logo"><img src="assets/ductmasters-logo-white.png" alt="Duct Masters logo"></div><div><h3>Duct Masters</h3><p>HVAC duct and sheet-metal fabrication</p></div></div></div></div></header>
-<div class="awardstrip"><div class="wrap awards"><a class="award" href="https://techbehemoths.com/awards-2025/winners/pay-per-click/gnext-llc" target="_blank" rel="noopener">🏆 GNEXT · PPC 2025</a><a class="award" href="https://techbehemoths.com/awards-2025/winners/seo/gnext-llc" target="_blank" rel="noopener">🏆 GNEXT · SEO 2025</a><a class="award" href="https://techbehemoths.com/awards-2025/winners/wordpress/gnext-llc" target="_blank" rel="noopener">🏆 GNEXT · WordPress 2025</a><a class="award" href="https://techbehemoths.com/awards-2025/winners/web-development/gxlocate" target="_blank" rel="noopener">🏆 GXLOCATE · Web Development 2025</a></div></div>
-<main id="main">
-<section class="section" id="companies"><div class="wrap"><div class="label">The group opportunity</div><h2 class="title">Shared expertise. <em>Distinct buying journeys.</em></h2><p class="lead">The brands can share governance and reporting, but their customers search, compare and convert differently. The strategy preserves each company’s specialist authority.</p><div class="rule"></div><div class="twobrands"><article class="brandpanel"><div class="brandimage"><img src="assets/target-hero.jpg" alt="Target International MEP project"><span class="brandtag">MEP Contracting</span></div><div class="brandbody"><div class="brandhead"><h3>Target International</h3><span>Design → Commission</span></div><p>Complete electrical, low-current, plumbing, drainage, HVAC, testing and commissioning solutions for commercial, residential, healthcare, retail, tower, infrastructure and industrial projects.</p><div class="chips"><span class="chip">HVAC</span><span class="chip">Electrical</span><span class="chip">Plumbing</span><span class="chip">Low Current</span><span class="chip">BMS</span></div></div></article><article class="brandpanel"><div class="brandimage"><img src="assets/ductmasters-factory.webp" alt="Duct Masters Musaffah fabrication facility"><span class="brandtag">Since 2005 · Musaffah</span></div><div class="brandbody"><div class="brandhead"><h3>Duct Masters</h3><span>Crafted Quality</span></div><p>Abu Dhabi HVAC duct manufacturing and precision metal fabrication serving contractors, HVAC companies, construction firms, facility operators and industrial clients.</p><div class="chips"><span class="chip">Duct Fabrication</span><span class="chip">Laser Cutting</span><span class="chip">CNC Forming</span><span class="chip">Welding</span><span class="chip">Powder Coating</span></div></div></article></div></div></section>
-<section class="section alt"><div class="wrap"><div class="label">Website observations</div><h2 class="title">What the current digital footprint <em>tells us.</em></h2><div class="rule"></div><div class="auditgrid"><div class="audit"><b>01</b><h3>Target needs a clearer hierarchy</h3><p>Repeated service blocks and placeholder wording dilute authority. A modern architecture should separate MEP disciplines, sectors, projects, approvals and lead actions.</p></div><div class="audit"><b>02</b><h3>Duct Masters has strong raw material</h3><p>The current site already documents 11 fabrication capabilities, a Musaffah facility, process, service areas and workshop imagery—ideal for local search and content campaigns.</p></div><div class="audit"><b>03</b><h3>Proof must lead the sale</h3><p>Both companies need stronger client-facing proof: project categories, facility capability, certifications, partner brands, delivery process and quote-ready portfolio documents.</p></div></div></div></section>
-<section class="section dark" id="strategy"><div class="wrap"><div class="label">Per-company growth system</div><h2 class="title">Four connected services. <em>One lead engine.</em></h2><p class="lead">The same framework applies to both companies, while keywords, content, audiences and conversion actions remain company-specific.</p><div class="rule"></div><div class="services"><div class="service"><div class="icon">⌖</div><h3>Local SEO</h3><p>GBP management, Abu Dhabi pages, citations, reviews, service-area authority and local rank reporting.</p></div><div class="service"><div class="icon">◉</div><h3>Social Management</h3><p>Project proof, workshop/process content, services, technical education, team credibility and enquiries.</p></div><div class="service"><div class="icon">G</div><h3>Google Ads</h3><p>High-intent Search campaigns focused on calls, forms and quotation requests across Abu Dhabi.</p></div><div class="service"><div class="icon">M</div><h3>Meta Ads</h3><p>Awareness, project proof, retargeting and lead-generation campaigns for decision makers.</p></div></div></div></section>
-<section class="section" id="plans"><div class="wrap"><div class="label">Simple per-company pricing</div><h2 class="title">AED 2,000 management. <em>Per brand.</em></h2><p class="lead">Each company has its own AED 2,000 monthly agency-management fee. Google and Meta advertising budgets are optional and can be activated independently for either brand.</p><div class="rule"></div>
-<div class="plans"><article class="plan"><div class="tier">Target International</div><h3>Monthly Management</h3><div class="price">AED 2,000 <small>/ month · agency fee</small></div><div class="breakdown"><b>Optional media:</b><br>AED 1,500 Google Ads<br>AED 500 Meta Ads<br><b>AED 2,000 total optional media</b></div><ul><li>Local SEO and GBP management</li><li>Social media management and content</li><li>Google Ads management when activated</li><li>Meta Ads management when activated</li><li>Monthly optimization and reporting</li><li>Abu Dhabi-focused strategy</li></ul><div class="plantotal"><span>AED 4,000/month</span> · with all optional media</div></article><article class="plan"><div class="tier">Duct Masters</div><h3>Monthly Management</h3><div class="price">AED 2,000 <small>/ month · agency fee</small></div><div class="breakdown"><b>Optional media:</b><br>AED 1,500 Google Ads<br>AED 500 Meta Ads<br><b>AED 2,000 total optional media</b></div><ul><li>Local SEO and GBP management</li><li>Social media management and content</li><li>Google Ads management when activated</li><li>Meta Ads management when activated</li><li>Monthly optimization and reporting</li><li>Abu Dhabi-focused strategy</li></ul><div class="plantotal"><span>AED 4,000/month</span> · with all optional media</div></article><article class="plan featured"><div class="ribbon">Clear group summary</div><div class="tier">Both Companies</div><h3>Combined Investment</h3><div class="price">AED 4,000 <small>/ month · agency fees</small></div><div class="breakdown"><b>AED 2,000</b> Target management<br><b>AED 2,000</b> Duct Masters management<br><b>Up to AED 4,000</b> optional group media</div><ul><li>Both brands managed separately</li><li>Separate campaigns and reporting</li><li>Google Ads may be activated per brand</li><li>Meta Ads may be activated per brand</li><li>Management-only option: AED 4,000</li><li>Full option with media: AED 8,000</li></ul><div class="plantotal"><span>AED 24,000</span> · 3 months with all media</div></article></div>
-<div class="vat"><strong>5% VAT is exclusive and is not included.</strong> Advertising media is optional and paid directly to Google and Meta. Agency management is AED 2,000 for Target International and AED 2,000 for Duct Masters. Production, creators, premium software and developer implementation are excluded unless quoted.</div></div></section>
-<section class="section alt" id="portfolios"><div class="wrap"><div class="label">Client-winning company portfolios</div><h2 class="title">Two service portfolios. <em>Built to close.</em></h2><p class="lead">Each company receives its own professionally designed digital/PDF portfolio—not a generic group brochure.</p><div class="rule"></div><div class="portgrid"><article class="portfolio"><h3>Target International Portfolio</h3><p>A modern MEP capabilities deck for developers, consultants, main contractors and facilities teams.</p><ul><li>Company story and positioning</li><li>HVAC, electrical, plumbing and low-current services</li><li>Sectors, project methodology and QA/QC</li><li>Partners, certifications and authority approvals</li><li>Project/case-study templates</li><li>Contact and tender-response pages</li></ul><div class="fee">AED 800 · one-time</div></article><article class="portfolio"><h3>Duct Masters Portfolio</h3><p>An industrial capabilities deck presenting the Musaffah facility, machinery, services and fabrication quality.</p><ul><li>Company history and facility profile</li><li>11 fabrication capabilities</li><li>Machines, materials and standards</li><li>Process from drawing to delivery</li><li>Workshop/project photo layouts</li><li>Quote-ready contact pages</li></ul><div class="fee">AED 800 · one-time</div></article></div><div class="bundle"><div><strong>Combined portfolio-design bundle</strong><p>Both company portfolios with one shared visual governance and up to two revision rounds each. VAT excluded.</p></div><b>AED 1,600</b></div></div></section>
-<section class="section" id="redesign"><div class="wrap"><div class="label">Target International website redesign</div><h2 class="title">From dated brochure site to <em>MEP lead platform.</em></h2><div class="rule"></div><div class="redesign"><div class="website-shot"><img src="assets/target-hero.jpg" alt="Target International website redesign concept"></div><div class="scope"><h3>Proposed redesign scope</h3><div class="scopegrid"><div class="scopeitem">Responsive UI/UX redesign</div><div class="scopeitem">Conversion-led homepage</div><div class="scopeitem">MEP service architecture</div><div class="scopeitem">Industry/sector pages</div><div class="scopeitem">Project portfolio system</div><div class="scopeitem">Certifications & partners</div><div class="scopeitem">Quote and contact journeys</div><div class="scopeitem">Technical SEO foundation</div><div class="scopeitem">GA4, GTM and lead tracking</div><div class="scopeitem">CMS training and handover</div></div><div class="estimate"><b>Indicative investment: AED 4,500–7,000</b><span>Final quotation depends on approved sitemap/page count, bilingual requirements, content migration, project volume, integrations and functionality. Scope can grow in phases over time.</span></div></div></div></div></section>
-<section class="section dark"><div class="wrap"><div class="label">90-day launch</div><h2 class="title">Set the foundation. <em>Build momentum.</em></h2><div class="rule"></div><div class="timeline"><div class="step"><b>WEEKS 01–02</b><h3>Access & measurement</h3><p>Accounts, GBP, analytics, call/form tracking, keyword baseline and content collection.</p></div><div class="step"><b>WEEKS 03–04</b><h3>Build & launch</h3><p>Campaign structures, creative bank, local SEO priorities and first publishing cycle.</p></div><div class="step"><b>MONTH 02</b><h3>Learn & optimize</h3><p>Search terms, audiences, creative, landing journeys, local rankings and lead quality.</p></div><div class="step"><b>MONTH 03</b><h3>Scale winners</h3><p>Reallocate budget, expand proven services and present quarter-two growth decisions.</p></div></div></div></section>
-<section class="section alt" id="investment"><div class="wrap"><div class="label">Quarter-one investment</div><h2 class="title">Every cost. <em>One clear summary.</em></h2><p class="lead">Recurring management, optional platform media and one-time project costs are separated below so the group can approve each component confidently.</p><div class="rule"></div>
-<div class="setupgrid"><article class="setupcard"><h3>Target International · Google Ads + GTM Setup</h3><div class="setupprice">AED 1,000 · one-time</div><ul><li>Google Ads account and campaign structure</li><li>Google Tag Manager and GA4 setup</li><li>Form, call and key-action conversion events</li><li>One focused campaign landing page</li><li>Keyword, negative and ad-asset setup</li><li>Launch QA and measurement verification</li></ul></article><article class="setupcard"><h3>Duct Masters · Google Ads + GTM Setup</h3><div class="setupprice">AED 1,000 · one-time</div><ul><li>Google Ads account and campaign structure</li><li>Google Tag Manager and GA4 setup</li><li>Form, call and quote-request conversion events</li><li>One focused campaign landing page</li><li>Keyword, negative and ad-asset setup</li><li>Launch QA and measurement verification</li></ul></article></div>
-<div class="summarywrap"><table class="summarytable"><thead><tr><th>Investment item</th><th>Target International</th><th>Duct Masters</th><th>Both companies</th><th>Billing</th></tr></thead><tbody><tr><td>Agency management</td><td>AED 6,000</td><td>AED 6,000</td><td>AED 12,000</td><td>Quarterly · recurring</td></tr><tr><td>Google Ads media — optional</td><td>AED 4,500</td><td>AED 4,500</td><td>AED 9,000</td><td>Platform media</td></tr><tr><td>Meta Ads media — optional</td><td>AED 1,500</td><td>AED 1,500</td><td>AED 3,000</td><td>Platform media</td></tr><tr><td>Google Ads + GTM setup, tracking & landing page</td><td>AED 1,000</td><td>AED 1,000</td><td>AED 2,000</td><td>One-time</td></tr><tr><td>Company portfolio design</td><td>AED 800</td><td>AED 800</td><td>AED 1,600</td><td>One-time</td></tr><tr><td>Target website redesign</td><td>AED 4,500–7,000</td><td>—</td><td>AED 4,500–7,000</td><td>One-time</td></tr><tr class="total"><td>Quarter 1 · without optional media</td><td>AED 12,300–14,800</td><td>AED 7,800</td><td>AED 20,100–22,600</td><td>VAT excluded</td></tr><tr class="total"><td>Quarter 1 · with all optional media</td><td>AED 18,300–20,800</td><td>AED 13,800</td><td>AED 32,100–34,600</td><td>VAT excluded</td></tr></tbody></table></div>
-<div class="investmentcards"><div class="investmentcard"><small>Management-led quarter</small><b>AED 20,100–22,600</b><p>Both companies’ three-month management, both Google Ads/GTM setups, both portfolios and the Target website redesign. Advertising media is not included.</p></div><div class="investmentcard altcard"><small>Full quarter with optional media</small><b>AED 32,100–34,600</b><p>Includes the complete management-led quarter plus three months of Google and Meta media for both companies.</p></div></div>
-<div class="payment"><h3>Suggested payment schedule · full-media option</h3><div class="paymentgrid"><div class="paymonth"><b>Month 1 · AED 13,850–15,100</b><span>Management + media + both setups + both portfolios + 50% website redesign</span></div><div class="paymonth"><b>Month 2 · AED 10,250–11,500</b><span>Management + media + remaining 50% website redesign</span></div><div class="paymonth"><b>Month 3 · AED 8,000</b><span>Management + optional media for both companies</span></div></div></div>
-<div class="vat"><strong>All prices exclude 5% VAT.</strong> Google and Meta media are optional and paid directly to the platforms. The website range is finalized after sitemap, content, functionality and integration approval.</div></div></section>
-<section class="section cta" id="contact"><div class="wrap"><div class="label">Recommended route</div><h2 class="title">Start management first. <em>Add media when ready.</em></h2><p class="lead">Begin both brands at AED 4,000 total monthly agency management. Activate the optional AED 1,500 Google and AED 500 Meta budget per company when each campaign is ready to generate and track enquiries.</p><a class="button" href="mailto:info@gnext.ae?subject=Target%20International%20and%20Duct%20Masters%20Proposal">Give it to me →</a><p class="fine">Proposal validity: 30 days · Minimum marketing term: 3 months · Final scope subject to account, content and technical discovery</p></div></section>
-</main>
-<footer><div class="wrap"><div class="footergrid"><div><div class="footbrand"><a href="https://www.gnext.ae" target="_blank" rel="noopener">GNEXT</a> <span>×</span> <a href="https://www.gxlocate.com" target="_blank" rel="noopener">GXLOCATE</a></div><div class="foottag">Abu Dhabi Digital Growth Partners</div><p class="footdesc">Two specialist firms operating from the same Abu Dhabi office—combining performance marketing, local search, social media, portfolio design, tracking and conversion-led web development.</p><div class="address">◆ Mazyad Mall, Tower 1, Office 603<br>MBZ City, Abu Dhabi, UAE</div><div class="footawards"><a class="footaward" href="https://techbehemoths.com/awards-2025/winners/wordpress/gnext-llc" target="_blank" rel="noopener">🏆 WordPress · GNEXT</a><a class="footaward" href="https://techbehemoths.com/awards-2025/winners/seo/gnext-llc" target="_blank" rel="noopener">🏆 SEO · GNEXT</a><a class="footaward" href="https://techbehemoths.com/awards-2025/winners/pay-per-click/gnext-llc" target="_blank" rel="noopener">🏆 PPC · GNEXT</a><a class="footaward" href="https://techbehemoths.com/awards-2025/winners/web-development/gxlocate" target="_blank" rel="noopener">🏆 Web Dev · GXL</a></div></div><div class="footcol"><h3>GNEXT LLC</h3><div class="footsub">Full-Service Digital Agency</div><div class="contact">✉ info@gnext.ae</div><div class="contact">↗ www.gnext.ae</div><div class="contact">☎ +971 55 611 5985</div><div class="contact">☎ +971 50 611 5911</div><div class="footservices"><span>Performance Marketing</span><span>PPC</span><span>Paid Social</span><span>Content</span><span>Analytics</span><span>Brand Strategy</span></div></div><div class="footcol"><h3>GXLOCATE</h3><div class="footsub">Search & Digital Experience</div><div class="contact">✉ info@gxlocate.com</div><div class="contact">↗ www.gxlocate.com</div><div class="contact">☎ +971 58 556 8611</div><div class="footservices"><span>Local SEO</span><span>GBP</span><span>Web Development</span><span>Conversion UX</span><span>GTM Tracking</span><span>Landing Pages</span></div></div><div class="footcol"><h3>Proposal</h3><div class="footsub">Quick Navigation</div><div class="footnav"><a href="#companies">Companies</a><a href="#strategy">Services</a><a href="#plans">Monthly Pricing</a><a href="#portfolios">Portfolios</a><a href="#redesign">Website Redesign</a><a href="#investment">Quarterly Investment</a></div></div></div><div class="footercta"><div><strong>Ready to activate the group growth plan?</strong><p>Approve management first, then switch on optional media when campaigns and tracking are ready.</p></div><a href="mailto:info@gnext.ae?subject=Target%20International%20and%20Duct%20Masters%20Proposal">Discuss proposal →</a></div><div class="footmeta"><div><small>Prepared for</small><b>Target International × Duct Masters</b></div><div><small>Prepared by</small><b>GNEXT × GXLOCATE</b></div><div><small>Proposal date</small><b>18 July 2026</b></div><div><small>Validity</small><b>30 days · Confidential</b></div></div><div class="footbottom"><span>© 2026 GNEXT LLC × GXLOCATE. All rights reserved. Registered in Abu Dhabi, UAE.</span><span>Group Growth Proposal · Version 1.2</span></div></div></footer>
-<script>
-const progress=document.getElementById('progress');const update=()=>{const d=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${d>0?scrollY/d*100:0}%`};addEventListener('scroll',update,{passive:true});update();
-document.querySelectorAll('.tab').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.tab,.tabcontent').forEach(el=>el.classList.remove('active'));button.classList.add('active');document.getElementById(button.dataset.tab).classList.add('active')}));
-</script>
-</body></html>
+  <article class="report">
+    <div class="brand-bar">
+      <span class="brand-name">GNEXT LLC x GXLOCATE</span>
+      <span class="brand-service">Google Ads Performance Marketing</span>
+    </div>
+    <header>
+      <p class="eyebrow">Client Optimization Report</p>
+      <h1>Google Ads Optimization - Spark</h1>
+      <div class="meta">
+        <span><strong>Reporting date:</strong> 22 July 2026</span>
+        <span><strong>Campaign:</strong> Search - Abu Dhabi Tyre Services - High Intent</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="summary">
+        <h2>Executive Summary</h2>
+        <p>We completed a detailed performance and tracking audit after identifying a recent decline in reported conversion efficiency. Click costs remained economical, but a larger share of traffic was not completing the tracked lead action. The work therefore focused on improving measurement accuracy, removing low-value traffic, strengthening campaign relevance, and protecting the existing budget rather than increasing spend prematurely.</p>
+        <p>The strongest Search campaign remains active. Older campaigns remain paused because their historical cost per conversion was materially higher and reactivating them would fragment the available budget and conversion data.</p>
+      </div>
+
+      <section>
+        <h2>Recent Performance</h2>
+        <p><strong>15-21 July compared with the previous seven days</strong></p>
+
+        <div class="kpis">
+          <div class="kpi">
+            <span class="kpi-label">Clicks</span>
+            <span class="kpi-value">100</span>
+            <span class="change-good">+11.1%</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-label">Average CPC</span>
+            <span class="kpi-value">AED3.18</span>
+            <span class="change-good">15.2% lower</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-label">Reported conversions</span>
+            <span class="kpi-value">18</span>
+            <span class="change-watch">-41.9%</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-label">Reported CPA</span>
+            <span class="kpi-value">AED17.68</span>
+            <span class="change-watch">+62.4%</span>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Latest period</th>
+                <th>Previous period</th>
+                <th>Change</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Impressions</td><td>1,235</td><td>1,143</td><td class="change-good">+8.1%</td></tr>
+              <tr><td>Clicks</td><td>100</td><td>90</td><td class="change-good">+11.1%</td></tr>
+              <tr><td>Advertising spend</td><td>AED318.23</td><td>AED337.44</td><td class="change-good">-5.7%</td></tr>
+              <tr><td>Average cost per click</td><td>AED3.18</td><td>AED3.75</td><td class="change-good">-15.2%</td></tr>
+              <tr><td>Reported conversions</td><td>18</td><td>31</td><td class="change-watch">-41.9%</td></tr>
+              <tr><td>Reported cost per conversion</td><td>AED17.68</td><td>AED10.89</td><td class="change-watch">+62.4%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top:16px">Traffic became cheaper and click volume increased, but reported conversions declined. This indicates that the primary issue is occurring after the click, including search intent, landing-page behaviour, tracking quality, or lead handling, rather than high advertising costs.</p>
+      </section>
+
+      <section>
+        <h2>Work Completed</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <h3>Conversion Tracking</h3>
+            <ul>
+              <li>Audited Google Ads conversion actions and the Spark Tires Google Tag Manager container.</li>
+              <li>Identified a missing Conversion Linker affecting attribution reliability.</li>
+              <li>Added and published the Conversion Linker across all tagged pages.</li>
+              <li>Verified the new GTM version is live.</li>
+              <li>Preserved existing tags and triggers while lead-quality reconciliation continues.</li>
+            </ul>
+          </div>
+
+          <div class="work-item">
+            <h3>Search Traffic Quality</h3>
+            <ul>
+              <li>Added 10 campaign-level negative keywords.</li>
+              <li>Excluded employment, training, wholesale, supplier, manufacturing, and used-tyre intent.</li>
+              <li>Preserved relevant tyre-service and promotional demand.</li>
+              <li>Avoided a broad exclusion for the word "free" because it may be relevant to genuine promotions.</li>
+            </ul>
+          </div>
+
+          <div class="work-item">
+            <h3>Keyword Structure</h3>
+            <ul>
+              <li>Identified duplicate exact-match Musaffah keywords competing across two ad groups.</li>
+              <li>Paused the duplicate in the low-volume ad group.</li>
+              <li>Kept the established version active in the primary ad group.</li>
+              <li>Preserved search coverage and historical campaign learning.</li>
+            </ul>
+          </div>
+
+          <div class="work-item">
+            <h3>Ad Assets</h3>
+            <ul>
+              <li>Reviewed sitelinks, callouts, call asset, and Responsive Search Ads.</li>
+              <li>Confirmed five active sitelinks on the main ad group.</li>
+              <li>Confirmed seven eligible account-level callouts.</li>
+              <li>Added a Service catalog structured snippet covering tyre repair, alignment, balancing, and rotation.</li>
+              <li>Preserved existing ads and assets already receiving interactions.</li>
+            </ul>
+          </div>
+
+          <div class="work-item">
+            <h3>Campaign Controls</h3>
+            <ul>
+              <li>Confirmed targeting is limited to Abu Dhabi.</li>
+              <li>Confirmed delivery uses the Google Search Network only.</li>
+              <li>Maintained the AED49.41 daily budget and Maximize Conversions strategy.</li>
+              <li>Kept weaker historical Search and Performance Max campaigns paused.</li>
+              <li>Did not apply Google's broad-match, AI Max, budget-increase, or target CPA recommendations automatically.</li>
+            </ul>
+          </div>
+
+          <div class="work-item">
+            <h3>Settings Preserved</h3>
+            <ul>
+              <li>Active campaign status</li>
+              <li>Current daily budget</li>
+              <li>Current bidding strategy</li>
+              <li>Existing Responsive Search Ads</li>
+              <li>Performing sitelinks and callouts</li>
+              <li>Previously paused campaigns</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="notice">
+          <h2>Why The Budget Was Not Increased</h2>
+          <p>The campaign is marked as limited by budget, but reported conversion efficiency recently declined. Increasing spend at this stage could scale uncertain or lower-quality lead activity. The current budget should remain stable until the revised tracking and search controls have collected sufficient data and reported leads can be reconciled with genuine enquiries and booked jobs.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Next 14-Day Monitoring Phase</h2>
+        <ul>
+          <li>Search-term quality following the new exclusions</li>
+          <li>Conversion rate and reported cost per conversion</li>
+          <li>Telephone, WhatsApp, and website-contact activity</li>
+          <li>Qualified-lead and booked-job outcomes</li>
+          <li>Performance by keyword, device, location, and time of day</li>
+          <li>Whether valuable impressions are being lost because of budget or ad rank</li>
+        </ul>
+        <p style="margin-top:16px">A budget increase or target CPA strategy should only be considered after two consecutive weeks of stable, trustworthy conversion data and an agreed qualified-lead cost target.</p>
+      </section>
+
+      <section>
+        <div class="status">
+          <h2>Current Position</h2>
+          <p>The account is now better controlled from both search-quality and attribution perspectives. The strongest campaign remains live, unnecessary keyword overlap has been removed, irrelevant traffic protection has been introduced, and the measurement setup has been strengthened. The next priority is confirming that reported conversions correspond with qualified customer enquiries and completed bookings before scaling the campaign.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">GNEXT LLC x GXLOCATE</div>
+          <div>Mazyad Mall, Tower 1, Office 603, MBZ City, Abu Dhabi, UAE</div>
+          <div style="margin-top:10px; color:var(--brand-gold)">TechBehemoths Awards 2025: WordPress Development, SEO, Pay-Per-Click and Web Development</div>
+        </div>
+        <div class="footer-contact">
+          <div><a href="mailto:info@gxlocate.com">info@gxlocate.com</a></div>
+          <div><a href="tel:+971585568611">+971 58 556 8611</a></div>
+          <div><a href="https://gnext.ae">gnext.ae</a> | <a href="https://gxlocate.com">gxlocate.com</a></div>
+        </div>
+      </div>
+      <div class="footer-note">Prepared 22 July 2026. Performance data reflects the Google Ads reporting windows stated above and is subject to reporting latency and conversion reconciliation. All client assets and accounts remain the property of Spark Tires.</div>
+    </footer>
+  </article>
+</body>
+</html>
